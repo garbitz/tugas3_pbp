@@ -26,7 +26,7 @@
         "pk": 3,
         "fields": {
             "watched": "False",
-            "title": "Movie",
+            "title": "Morbius 2",
             "rating": 100000,
             "release_date": "17/07/2021",
             "review": "Only saw the trailer for this movie, but man! i'm so excited for this movie. I'm optimistic that this movie will have good story and directional approach!"
@@ -37,10 +37,10 @@
         "pk": 4,
         "fields": {
             "watched": "True",
-            "title": "gundam",
-            "rating": 10,
-            "release_date": "17/07/2021",
-            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+            "title": "Avengers 10 : The Rise of Sleepy Joe",
+            "rating": 2,
+            "release_date": "24/10/2042",
+            "review": "Marvel once again with the most boring movie to date. They only add some propaganda to push their visions into ours!! I freaking hate disney, they clearly wants to take over the entire world you stupid anti-christ!!1!"
         }
     },
     {
@@ -48,10 +48,10 @@
         "pk": 5,
         "fields": {
             "watched": "True",
-            "title": "gundam",
-            "rating": 10,
+            "title": "Squid Game : The Anime [Season 5]",
+            "rating": 6,
             "release_date": "17/07/2021",
-            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+            "review": "A really solid anime story-wise, but other than that it's super mediocre"
         }
     },
     {
@@ -59,10 +59,10 @@
         "pk": 6,
         "fields": {
             "watched": "True",
-            "title": "gundam",
+            "title": "The Feminine Side of Andrew Tate : Director's Cut",
             "rating": 10,
-            "release_date": "17/07/2021",
-            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+            "release_date": "17/07/2028",
+            "review": "OMG ANDREW TATE MY TOP G ONGGGG FR 🔥 💯💯. AGAIN WITH THE W TAKE BROO DEADASSS 💯 WWWWWW"
         }
     },
     {
@@ -70,9 +70,9 @@
         "pk": 7,
         "fields": {
             "watched": "True",
-            "title": "gundam",
-            "rating": 10,
-            "release_date": "17/07/2021",
+            "title": "The Fantastic Zoomer : Revenge of The Adin Ross Empire",
+            "rating": 3,
+            "release_date": "17/07/2031",
             "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
         }
     },
@@ -81,10 +81,10 @@
         "pk": 8,
         "fields": {
             "watched": "True",
-            "title": "gundam",
-            "rating": 10,
+            "title": "Python : The Programming Language",
+            "rating": 1,
             "release_date": "17/07/2021",
-            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+            "review": "wtf did I just watched 💀"
         }
     },
     {
@@ -92,10 +92,10 @@
         "pk": 9,
         "fields": {
             "watched": "True",
-            "title": "gundam",
-            "rating": 10,
+            "title": "Grand Theft Auto : The Movie",
+            "rating": 5,
             "release_date": "17/07/2021",
-            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+            "review": "A realy weird adaptation"
         }
     },
     {
@@ -103,10 +103,10 @@
         "pk": 10,
         "fields": {
             "watched": "True",
-            "title": "gundam",
-            "rating": 10,
+            "title": "Avengers : Eternity War",
+            "rating": 8,
             "release_date": "17/07/2021",
-            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+            "review": "Good movie, but we all just bored with this superhero type of stuffs. It's super repetitive"
         }
     }
 ]
