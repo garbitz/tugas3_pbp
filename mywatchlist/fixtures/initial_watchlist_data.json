@@ -4,10 +4,10 @@
         "pk": 1,
         "fields": {
             "watched": "True",
-            "title": "gundam",
-            "rating": 10,
+            "title": "Pokemon",
+            "rating": 2,
             "release_date": "17/07/2021",
-            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+            "review": "Mediocre but fun"
         }
     },
     {
@@ -15,10 +15,10 @@
         "pk": 2,
         "fields": {
             "watched": "True",
-            "title": "gundam",
-            "rating": 10,
+            "title": "Avengers",
+            "rating": 5,
             "release_date": "17/07/2021",
-            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+            "review": "NORMI BET DA"
         }
     },
     {
@@ -46,6 +46,61 @@
     {
         "model": "mywatchlist.watchlistitem",
         "pk": 5,
+        "fields": {
+            "watched": "True",
+            "title": "gundam",
+            "rating": 10,
+            "release_date": "17/07/2021",
+            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 6,
+        "fields": {
+            "watched": "True",
+            "title": "gundam",
+            "rating": 10,
+            "release_date": "17/07/2021",
+            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 7,
+        "fields": {
+            "watched": "True",
+            "title": "gundam",
+            "rating": 10,
+            "release_date": "17/07/2021",
+            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 8,
+        "fields": {
+            "watched": "True",
+            "title": "gundam",
+            "rating": 10,
+            "release_date": "17/07/2021",
+            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 9,
+        "fields": {
+            "watched": "True",
+            "title": "gundam",
+            "rating": 10,
+            "release_date": "17/07/2021",
+            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 10,
         "fields": {
             "watched": "True",
             "title": "gundam",
