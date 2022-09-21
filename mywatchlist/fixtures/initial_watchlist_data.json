@@ -1,0 +1,57 @@
+[
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 1,
+        "fields": {
+            "watched": "True",
+            "title": "gundam",
+            "rating": 10,
+            "release_date": "17/07/2021",
+            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 2,
+        "fields": {
+            "watched": "True",
+            "title": "gundam",
+            "rating": 10,
+            "release_date": "17/07/2021",
+            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 3,
+        "fields": {
+            "watched": "True",
+            "title": "gundam",
+            "rating": 10,
+            "release_date": "17/07/2021",
+            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 4,
+        "fields": {
+            "watched": "True",
+            "title": "gundam",
+            "rating": 10,
+            "release_date": "17/07/2021",
+            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 5,
+        "fields": {
+            "watched": "True",
+            "title": "gundam",
+            "rating": 10,
+            "release_date": "17/07/2021",
+            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+        }
+    }
+]
