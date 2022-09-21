@@ -4,10 +4,10 @@
         "pk": 1,
         "fields": {
             "watched": "True",
-            "title": "Pokemon",
-            "rating": 2,
+            "title": "Spider-Man : No Way Home",
+            "rating": 9,
             "release_date": "17/07/2021",
-            "review": "Mediocre but fun"
+            "review": "A really fun and epic movie with a bit of mess sprinkle here and there, but it's really good"
         }
     },
     {
@@ -15,21 +15,21 @@
         "pk": 2,
         "fields": {
             "watched": "True",
-            "title": "Avengers",
-            "rating": 5,
+            "title": "Jojo Rabbit",
+            "rating": 9,
             "release_date": "17/07/2021",
-            "review": "NORMI BET DA"
+            "review": "This movie got me caught off guard. I thought it's gonna be some funny ass movie with a hitler parody but it's not"
         }
     },
     {
         "model": "mywatchlist.watchlistitem",
         "pk": 3,
         "fields": {
-            "watched": "True",
-            "title": "gundam",
-            "rating": 10,
+            "watched": "False",
+            "title": "Movie",
+            "rating": 100000,
             "release_date": "17/07/2021",
-            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+            "review": "Only saw the trailer for this movie, but man! i'm so excited for this movie. I'm optimistic that this movie will have good story and directional approach!"
         }
     },
     {
