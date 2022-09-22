@@ -5,8 +5,8 @@
         "fields": {
             "watched": "True",
             "title": "Spider-Man : No Way Home",
-            "rating": 9,
-            "release_date": "17/07/2021",
+            "rating": 4,
+            "release_date": "15/12/2021",
             "review": "A really fun and epic movie with a bit of mess sprinkle here and there, but it's really good"
         }
     },
@@ -16,8 +16,8 @@
         "fields": {
             "watched": "True",
             "title": "Jojo Rabbit",
-            "rating": 9,
-            "release_date": "17/07/2021",
+            "rating": 4,
+            "release_date": "18/10/2019",
             "review": "This movie got me caught off guard. I thought it's gonna be some funny ass movie with a hitler parody but it's not"
         }
     },
@@ -27,8 +27,8 @@
         "fields": {
             "watched": "False",
             "title": "Morbius 2",
-            "rating": 100000,
-            "release_date": "17/07/2021",
+            "rating": 5,
+            "release_date": "27/04/2032",
             "review": "Only saw the trailer for this movie, but man! i'm so excited for this movie. I'm optimistic that this movie will have good story and directional approach!"
         }
     },
@@ -39,8 +39,8 @@
             "watched": "True",
             "title": "Avengers 10 : The Rise of Sleepy Joe",
             "rating": 2,
-            "release_date": "24/10/2042",
-            "review": "Marvel once again with the most boring movie to date. They only add some propaganda to push their visions into ours!! I freaking hate disney, they clearly wants to take over the entire world you stupid anti-christ!!1!"
+            "release_date": "04/10/2042",
+            "review": "Marvel once again with the most boring movie to date. They only add some propaganda to push their visions into ours!! I freaking hate disney!"
         }
     },
     {
@@ -49,8 +49,8 @@
         "fields": {
             "watched": "True",
             "title": "Squid Game : The Anime [Season 5]",
-            "rating": 6,
-            "release_date": "17/07/2021",
+            "rating": 3,
+            "release_date": "11/01/2031",
             "review": "A really solid anime story-wise, but other than that it's super mediocre"
         }
     },
@@ -60,8 +60,8 @@
         "fields": {
             "watched": "True",
             "title": "The Feminine Side of Andrew Tate : Director's Cut",
-            "rating": 10,
-            "release_date": "17/07/2028",
+            "rating": 5,
+            "release_date": "17/27/2028",
             "review": "OMG ANDREW TATE MY TOP G ONGGGG FR 🔥 💯💯. AGAIN WITH THE W TAKE BROO DEADASSS 💯 WWWWWW"
         }
     },
@@ -70,10 +70,10 @@
         "pk": 7,
         "fields": {
             "watched": "True",
-            "title": "The Fantastic Zoomer : Revenge of The Adin Ross Empire",
-            "rating": 3,
-            "release_date": "17/07/2031",
-            "review": "Bagus bet da fosho fosho deadass frfr ongg no mid mid mid mid"
+            "title": "The Fantastic Zoomer : Rise of The Adin Ross Empire",
+            "rating": 5,
+            "release_date": "07/07/2031",
+            "review": "Really good movie. I really like it how they interpreted Adin as a really good guy"
         }
     },
     {
@@ -83,7 +83,7 @@
             "watched": "True",
             "title": "Python : The Programming Language",
             "rating": 1,
-            "release_date": "17/07/2021",
+            "release_date": "17/11/2101",
             "review": "wtf did I just watched 💀"
         }
     },
@@ -93,8 +93,8 @@
         "fields": {
             "watched": "True",
             "title": "Grand Theft Auto : The Movie",
-            "rating": 5,
-            "release_date": "17/07/2021",
+            "rating": 1,
+            "release_date": "25/09/2066",
             "review": "A realy weird adaptation"
         }
     },
@@ -104,8 +104,8 @@
         "fields": {
             "watched": "True",
             "title": "Avengers : Eternity War",
-            "rating": 8,
-            "release_date": "17/07/2021",
+            "rating": 3,
+            "release_date": "18/05/2025",
             "review": "Good movie, but we all just bored with this superhero type of stuffs. It's super repetitive"
         }
     }

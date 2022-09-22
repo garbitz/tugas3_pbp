@@ -1,6 +1,6 @@
 table, th, td {
     text-align: center;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 tr:nth-child(even) {background-color: #f2f2f2;}
@@ -8,4 +8,5 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 th {
     background-color: #E4EDAC;
     color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }

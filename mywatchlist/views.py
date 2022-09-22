@@ -11,9 +11,9 @@ def status(request):
         if watchlist.watched == "True":
             cnt += 1
     if cnt >= len(list_watchlist) - cnt:
-        return "Berhasil"
+        return "Selamat, kamu sudah banyak menonton!"
     else:
-        return "Gagal"
+        return "Wah, kamu masih sedikit menonton!"
 
 def show_watchlist(request):
     data_watchlist = WatchlistItem.objects.all()

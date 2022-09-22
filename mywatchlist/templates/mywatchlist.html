@@ -4,15 +4,14 @@
 
   <h1>Assignment 3 PBP/PBD</h1>
 
-  <h5>Name: </h5>
-  <p>{{nama}}</p>
+  <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Name: </h5>
+  <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">{{nama}}</p>
 
-  <h5>Student ID: </h5>
-  <p>{{id}}</p>
+  <h5 style = "font-family: Verdana, Geneva, Tahoma, sans-serif;">Student ID: </h5>
+  <p style = "font-family: Verdana, Geneva, Tahoma, sans-serif;">{{id}}</p>
 
-  <h5>{{status}}</h5>
 
-  <table>
+  <table style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
     <tr>
       <th>Watched ?</th>
       <th>Title</th>
@@ -31,5 +30,8 @@
     </tr>
 	  {% endfor %}
   </table>
+
+  <h5 style = "font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 32px; color: blue; text-align: center;">{{status}}</h5>
+
 
  {% endblock content %}
