@@ -39,9 +39,9 @@ Karena diperlukannya bagian yang mengirim data dari suatu stack ke stack lainnya
 
 ![postman_html_t3](https://user-images.githubusercontent.com/94692166/191650729-21741759-cd44-4008-b951-5b3694439854.png)
 
-</details>XML
+</details>
 
-<details><summary></summary>
+<details>XML<summary></summary>
 
 ![postman_xml_t3](https://user-images.githubusercontent.com/94692166/191650752-23abb9fb-fc6e-44c4-ae91-0c7f74dd6efe.png)
 
