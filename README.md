@@ -2,7 +2,7 @@
 
 Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu Komputer Universitas Indonesia, Semester Ganjil 2022/2023
 
-*Read this in other languages: [Indonesian](README.md), [English](README.en.md)*
+Link Aplikasi Heroku - https://pbp-tugas3.herokuapp.com/
 
 ## Jelaskan perbedaan antara JSON, XML, dan HTML!
 
@@ -19,12 +19,36 @@ Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu 
 
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 
-Pada template ini, deployment dilakukan dengan memanfaatkan GitHub Actions sebagai _runner_ dan Heroku sebagai platform Hosting aplikasi. 
-
-Untuk melakukan deployment, kamu dapat melihat instruksi yang ada pada [Tutorial 0](https://pbp-fasilkom-ui.github.io/ganjil-2023/assignments/tutorial/tutorial-0).
-
-Untuk contoh aplikasi Django yang sudah di deploy, dapat kamu akses di [https://django-pbp-template.herokuapp.com/](https://django-pbp-template.herokuapp.com/)
+- Membuat aplikasi mywatchlist dengan `python manage.py startapp mywatchlist` (membuat copy dari folder aplikasi yang sudah ada juga bisa)
+- Menambahkan atribut-atribut yang diperlukan pada `models.py`
+- Melakukan proses migrasi ke dalam database lokal django dengan `python manage.py makemigrations` dan `python manage.py migrate`
+- Menyesuaikan procfile dengan file json yang digunakan
+- Membuat file `.json` yang berisi data-data yang ingin ditampilkan. Lalu memasukkan data tersebut ke dalam database lokal django dengan `python manage.py loaddata (FILE_NAME).json`
+- Membuat template html untuk menampilkan data di web
+- Mengimplementasikan fungsi-fungsi yang menampilkan atribut-atribut yang sudah dibuat dalam bentuk html, xml, dan json dalam `views.py`
+- Melakukan routing dari fungsi-fungsi yang ada di `views.py` di dalam `urls.py`
+- Melakukan routing url aplikasi di dalam `urls.py` yang ada dalam folder `project_django`
+- Membuat fungsi-fungsi dalam `tests.py` untuk melakukan unit testing
+- Add, commit, dan push dari perubahan-perubahan yang sudah dibuat
+- Membuat aplikasi baru di herokuapp, lalu menyesuaikan secret variables dengan API key dan nama aplikasi dari herokuapp
+- Gunakan postman untuk melihat apakah status response yang diberikan sudah oke
 
 ## Postman
 
-Template ini dibuat berdasarkan [PBP Ganjil 2021](https://gitlab.com/PBP-2021/pbp-lab) yang ditulis oleh Tim Pengajar Pemrograman Berbasis Platform 2021 ([@prakashdivyy](https://gitlab.com/prakashdivyy)) dan [django-template-heroku](https://github.com/laymonage/django-template-heroku) yang ditulis oleh [@laymonage, et al.](https://github.com/laymonage). Template ini dirancang sedemikian rupa sehingga mahasiswa dapat menjadikan template ini sebagai awalan serta acuan dalam mengerjakan tugas maupun dalam berkarya.
+<details><summary>HTML</summary>
+
+![postman_html_t3](https://user-images.githubusercontent.com/94692166/191650729-21741759-cd44-4008-b951-5b3694439854.png)
+
+</details>XML
+
+<details><summary></summary>
+
+![postman_xml_t3](https://user-images.githubusercontent.com/94692166/191650752-23abb9fb-fc6e-44c4-ae91-0c7f74dd6efe.png)
+
+</details>
+
+<details><summary>JSON</summary>
+
+![postman_json_t3](https://user-images.githubusercontent.com/94692166/191650784-f8571975-b8b5-432a-a45d-34ac00e57ac0.png)
+
+</details>
