@@ -15,7 +15,7 @@ Link Aplikasi Heroku - https://pbp-tugas3.herokuapp.com/
 
 ## Jelaskan mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform?
 
-
+Karena diperlukannya bagian yang mengirim data dari suatu stack ke stack lainnya saat proses development sebuah platform. Format data umum yang dikirim bentuknya bisa bermacam-macam, seperti html, xml, dan json.
 
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 
