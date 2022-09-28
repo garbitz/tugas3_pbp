@@ -12,6 +12,7 @@
       <th>Title</th>
       <th>Description</th>
       <th>Status</th>
+      <th>Finish</th>
     </tr>
     {% comment %} Add the data below this line {% endcomment %}
     {% for item in list %}
@@ -21,6 +22,8 @@
       <td>{{item.title}}</td>
       <td>{{item.description}}</td>
       <td>{{item.is_finished}}</td>
+      <td><button><a href="{% url 'todolist:finish-task' item.id %}">Finish</a></button></td>
+      
     </tr>
 	  {% endfor %}
   </table>
