@@ -16,28 +16,28 @@ from django.urls import reverse
 # Create your views here.
 @login_required(login_url='/todolist/login/')
 
+# Fungsi yang menampilkan list to-do
 def show_todolist(request):
     data_todolist = Task.objects.filter(user=request.user)
     context = {
         'list': data_todolist,
-        # 'nama': 'Muhammad Abizar Rachmanda',
-        # 'id' : '2106751133',
-        # 'status' : status(request)
+        'last_login': request.COOKIES['last_login'],
     }
     return render(request, "todolist.html", context)
 
+# Fungsi yang membuat task baru
 def create_task(request):
     if request.method == 'POST':
         title = request.POST.get('title')
         description = request.POST.get('description')
         date = datetime.datetime.now()
         user = request.user
-        is_finished = False
+        is_finished = "❎"
         Task.objects.create(title=title, description=description, date=date, user=user, is_finished=is_finished)
         return redirect('todolist:show_todolist')
     return render(request,"create-task.html")
 
-
+# Fungsi untuk handle register
 def register(request):
     form = UserCreationForm()
 
@@ -51,6 +51,7 @@ def register(request):
     context = {'form':form}
     return render(request, 'register.html', context)
 
+# Fungsi untuk handle login
 def login_user(request):
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -67,14 +68,22 @@ def login_user(request):
     
     return render(request, 'login.html', context)
 
+# Fungsi untuk handle logout
 def logout_user(request):
     logout(request)
     response = HttpResponseRedirect(reverse('todolist:login'))
     response.delete_cookie('last_login')
     return response
 
+# Fungsi yang mengganti status task
 def finish_task(request, pk):
     task = Task.objects.get(id=pk)
-    task.is_finished = True
+    task.is_finished = "✅"
     task.save()
+    return redirect('todolist:show_todolist')
+
+# Fungsi yang menghapus task
+def delete_task(request, pk):
+    task = Task.objects.get(id=pk)
+    Task.delete(task)
     return redirect('todolist:show_todolist')
