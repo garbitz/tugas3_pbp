@@ -8,7 +8,7 @@ Link Aplikasi Heroku - https://pbp-tugas3.herokuapp.com/todolist
 
 `{% csrf_token %}` merupakan token berguna untuk mencegah serangan csrf, yang terjadi dimana web yang berbeda mengirim request atas nama pengguna dari suatu web yang ditargetkan.
 
-msh blm
+Yang akan terjadi adalah akan menampilkan pesan kalau browser tidak membuat cookie yang aman atau tidak bisa  mengakses cookie yang meng-authorize proses login yang kita lakukan.
 
 ## Apakah kita dapat membuat elemen `<form>` secara manual (tanpa menggunakan generator seperti `{{ form.as_table }}`)? Jelaskan secara gambaran besar bagaimana cara membuat `<form>` secara manual.
 
