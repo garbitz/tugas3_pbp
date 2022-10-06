@@ -33,7 +33,14 @@ Link Aplikasi Heroku - https://pbp-tugas3.herokuapp.com/todolist
 
 ## Jelaskan tipe-tipe CSS selector yang kamu ketahui.
 
-
+- *Universal selector*, yang akan memilih semua elemen (*).  
+- *Type selector*, yang akan memilih semua elemen dengan node yang sama.  
+- *Class selector*, yang akan memilih semua elemen dengan class yang sesuai, yang dibuat properti `class` di suatu elemen.  
+- *ID selector*, yang akan memilih semua elemen dengan ID yang sesuai, yang dibuat dari properti `id` di suatu elemen.  
+- *Attribute selector*, yang akan memilih semua elemen yang memiliki suatu atribut (dengan value yang sesuai, jika perlu).  
+- *Selector list*, yang akan menggabungkan beberapa elemen untuk satu aturan.  
+- *Descendant combinator*, yang akan memilih elemen yang merupakan keturunan oleh (atau di dalam) elemen pertamanya.  
+- *Child combinator*, yang akan memilih leemen yang merupakan keturunan langsung/anak dari suatu elemen.
 
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 
