@@ -49,6 +49,7 @@
     </h2>
 
   </div>
+  
 
   <div class="gradient-custom">
     <br><br><br>
@@ -58,7 +59,7 @@
       {% for item in list %}
       
         <div class="col">
-          <div class="card .bg-light .bg-gradient rounded" style="width: 18rem;">
+          <div class="card .bg-light .bg-gradient rounded">
             <div class="card-body">
               <h5 class="card-title">{{item.title}}</h5>
               <p class="card-text">{{item.description}}</p>
@@ -71,11 +72,10 @@
     
         
       {% endfor %}
-      </div>
     {% else %}
     <p>No Task Available</p>
     {% endif %}
-  
+    </div>
     <h5></h5>
   
   
