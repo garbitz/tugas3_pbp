@@ -12,7 +12,24 @@ Link Aplikasi Heroku - https://pbp-tugas3.herokuapp.com/todolist
 
 ## Jelaskan tag HTML5 yang kamu ketahui.
 
-
+- `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`, heading sebagai judul/subjudul.
+- `<p>`, untuk suatu teks paragraf. 
+- `<a>`, untuk membuat link dari suatu URL, yang biasanya sebuah halaman lain.
+- `<div>`, untuk digunakan untuk isi bagian web.
+- `<span>`, untuk digunakan untuk membagi bagian pada tulisan. 
+- `<table>` tabel secaraa keseluruhan, `<tr>` baris tabel, `<th>` header table, `<td>` data tabel.
+- `<main>`, untuk bagian utama dalam suatu halamn
+- `<header>`, untuk bagian header pada suatu halaman.
+- `<footer>`, untuk bagian footer pada suatu halaman.
+- `<nav>`, untuk bagian navigasi pada suatu halaman.
+- `<ul>` dan `<ol>`, untuk daftar tak terurut (unordered) dan daftar terurut (ordered). 
+- `<li>` digunakan untuk tiap butir pada daftar.
+- `<head>`, untuk menyimpan identitas, informasi, atau metadata dari suatu halaman.
+- `<link>`, untuk menghubungan suatu sumber daya, seperti *stylesheet*.
+- `<meta>`, untuk metadata suatu halaman.
+- `<script>`, untuk menjalankan script yang diperlukan.
+- `<title>`, untuk memberi judul pada suatu halaman. Ini yang muncul pada nama *tab* atau *window* saat dibuka.
+- `<style>`, untuk memberikan styling secara internal.
 
 ## Jelaskan tipe-tipe CSS selector yang kamu ketahui.
 
