@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .forms import TaskForm
 from todolist.models import Task
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseNotFound
 from django.core import serializers
 from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
@@ -12,6 +12,7 @@ from django.contrib.auth.decorators import login_required
 import datetime
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 @login_required(login_url='/todolist/login/')
@@ -34,7 +35,7 @@ def create_task(request):
         user = request.user
         is_finished = "❎"
         Task.objects.create(title=title, description=description, date=date, user=user, is_finished=is_finished)
-        return redirect('todolist:show_todolist')
+        return redirect('todolist:show_todolist_old')
     return render(request,"create-task.html")
 
 # Fungsi untuk handle register
@@ -86,4 +87,40 @@ def finish_task(request, pk):
 def delete_task(request, pk):
     task = Task.objects.get(id=pk)
     Task.delete(task)
-    return redirect('todolist:show_todolist')
+    return redirect('todolist:show_todolist_old')
+
+def show_json(request):
+    task = Task.objects.filter(user=request.user)
+    return HttpResponse(serializers.serialize('json', task))
+
+def show_todolist_ajax(request):	
+    data_todolist = Task.objects.filter(user=request.user)
+    context = {
+        'task': data_todolist,
+        'last_login': request.COOKIES['last_login'],
+    }
+    return render(request, "todolist-ajax.html", context)
+
+def create_task_ajax(request):
+    if request.method == 'POST':
+        title = request.POST.get('title')
+        description = request.POST.get('description')
+        date = datetime.datetime.now()
+        user = request.user
+        is_finished = "❎"
+        new_task = Task(title=title, description=description, date=date, user=user, is_finished=is_finished)
+        new_task.save()
+
+        return HttpResponse(b"CREATED", status=201)
+
+    return HttpResponseNotFound()
+
+@csrf_exempt 
+def delete_task_ajax(request, pk):
+    if request.method =='DELETE' :
+        task_selected = Task.objects.get(id=pk)
+        Task.delete(task_selected)
+    
+        return HttpResponse(b"DELETED", status=201)
+    
+    return HttpResponseNotFound()
