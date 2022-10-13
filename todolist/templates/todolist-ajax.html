@@ -128,7 +128,7 @@
             </form>
         </div>
         <div class="modal-footer">
-            <td><button class="btn btn-outline-dark btn-lg px-5" id="button" data-bs-dismiss="modal">Create</button></td>
+            <td><button class="btn btn-outline-dark btn-lg px-5" id="button" data-bs-dismiss="modal" onsubmit="return false;">Create</button></td>
         </div>
       </div>
     </div>
@@ -160,7 +160,8 @@
                 {% else %}
                 <p class="card-text">❎</p>
                 {% endif %}
-          
+
+                <button class="bg-green-500 rounded-2xl p-2 text-white font-bold delete" onclick="ToggleStatus(${item.pk})">Finish</button>
                 <button class="bg-green-500 rounded-2xl p-2 text-white font-bold delete" onclick="deleteTask(${item.pk})">Delete</button>
             </div>
           </div>
@@ -178,16 +179,25 @@
       return false
     }
 
-//     async function deleteTask(val) {
-//     console.log(111);
-//     const fetchInit = {
-// 		method: "DELETE",
-// 		headers: {
-// 			'X-CSRFToken': window.CSRF_TOKEN
-// 		}
-// 	}
-//     return await fetch(`delete/${val}`, fetchInit)
-//   }
+    function deleteTask(id) {
+        $.ajax({
+            type: "GET",
+            url: "/todolist/delete-task-ajax/" + id,
+            data: {csrfmiddlewaretoken: '{{ csrf_token }}'}
+        }).done((data) => {
+            refreshTodolist();
+        })
+    }
+
+    function toggleStatus(id) {
+        $.ajax({
+            type: "GET",
+            url: "/todolist/toggle-finish/" + id,
+            data: {csrfmiddlewaretoken: '{{ csrf_token }}', pk: id}
+        }).done((data) => {
+            refreshTodolist();
+        })
+    }
 
     document.getElementById("button").onclick = addTodolist
     

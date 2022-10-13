@@ -115,12 +115,18 @@ def create_task_ajax(request):
 
     return HttpResponseNotFound()
 
-@csrf_exempt 
 def delete_task_ajax(request, pk):
-    if request.method =='DELETE' :
-        task_selected = Task.objects.get(id=pk)
-        Task.delete(task_selected)
-    
-        return HttpResponse(b"DELETED", status=201)
-    
-    return HttpResponseNotFound()
+    data = Task.objects.get(id=pk)
+    data.delete()
+    response = HttpResponseRedirect(reverse("todolist:show_todolist"))
+    return response
+
+def toggle_finish(request, pk):
+    data = Task.objects.get(id=pk)
+    if data.is_finished == "✅":
+        data.is_finished = "❎"
+    else:
+        data.is_finished = "✅"
+    data.save()
+    response = HttpResponseRedirect(reverse("todolist:show_todolist"))
+    return response

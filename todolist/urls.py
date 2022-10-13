@@ -10,6 +10,7 @@ from todolist.views import show_json
 from todolist.views import show_todolist_ajax
 from todolist.views import create_task_ajax
 from todolist.views import delete_task_ajax
+from todolist.views import toggle_finish
 
 app_name = 'todolist'
 
@@ -25,5 +26,6 @@ urlpatterns = [
     path('old', show_todolist, name='show_todolist_old'),
     path('create-task-ajax/', create_task_ajax, name='create-task-ajax'),
     path('delete-task-ajax/<int:pk>', delete_task_ajax, name='delete-task-ajax'),
+    path('toggle-finsih/<int:pk>', toggle_finish, name='toggle'),
 
 ]
